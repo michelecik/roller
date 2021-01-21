@@ -1,0 +1,41 @@
+#testo {
+    background-color: var(--light);
+    color: var(--dark);
+    /* font-family: 'NeueMetanaBold', sans-serif; */
+    /* font-family: 'Beth Ellen'; */
+    /* font-family: 'Homemade Apple'; */
+    font-size: 2em;
+    text-align: center;;
+    overflow: hidden;
+    height: 175px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.roller {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+}
+
+.roller span {
+    display: inline-block;
+    animation: roller 12s linear infinite;
+  }
+
+#bundle #pitch {
+    position: absolute;
+}
+
+@keyframes roller {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
